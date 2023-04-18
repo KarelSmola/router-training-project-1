@@ -1,0 +1,14 @@
+.list {
+  list-style: none;
+}
+
+.list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.list a:hover,
+.list a.active {
+  color: var(--color-primary-600);
+  text-decoration: underline;
+}

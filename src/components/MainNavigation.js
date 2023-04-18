@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import classes from "./Navigation.module.css";
 
@@ -10,7 +10,7 @@ const MainNavigation = () => {
         <ul className={classes.list}>
           <li>
             <NavLink
-              to="/home"
+              to="/"
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }

@@ -1,15 +1,18 @@
 import React, { Fragment } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
-const ProductsList = () => {
-  const param = useParams();
+const ProductDetail = () => {
+  const params = useParams();
 
   return (
     <Fragment>
       <h1>Product detail</h1>
-      {param}
+      {params.productId}
+      <Link to=".." relative="path">
+        Back
+      </Link>
     </Fragment>
   );
 };
 
-export default ProductsList;
+export default ProductDetail;
